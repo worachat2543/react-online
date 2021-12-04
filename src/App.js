@@ -1,17 +1,16 @@
-
+import React from 'react'
 import Footer from './components/Footer';
-import Header from './components/Header';
-import Logo from './components/Logo';
-import './App.css';
+import NavBar from './components/NavBar';
+import { HomePage } from './Pages/HomePage';
 
-function App() {
+function App () {
   return (
-    <div className="logo">
-      <Logo />
-     <Header />
-     <Footer title={"tni"} website="www.google.com" address="Bangkok" postcode={10310} isOpen={false}></Footer>
-    </div>
+    <>
+      <NavBar />
+      <HomePage />
+      <Footer />
+      
+    </>
   );
 }
-
 export default App;
